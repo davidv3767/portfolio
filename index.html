@@ -1,18 +1,46 @@
-<!--Simple styling-->
+<!--Simple styling: page + menu-->
 <style>
     body {
         background-color: #009D94;
         font-family: serif;
         padding: 20px;
     }
+    .menu {
+        background-color: #33;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li {
+        float: left;
+    }
+    .menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .menu li a:hover {
+        background-color: #555;
+        color: #009D94;
+    }
 </style>
 
 <!--Main header-->
 <h1>Welcome to David's website!</h1>
+<p>The purpose of this website is to give you information about David, from his favorite color to his work in high school.</p>
+<p>Enjoy this creation of code! </p>
 
-<!--Simple Menu-->
+<!--Structing of Menu-->
 <h2>Menu</h2>
-<nav>
+<nav class="menu">
     <ul>
         <li><a href="index.html">Main Page (Here)</a></li>
         <li><a href="biography.html">Biography</a></li>
